@@ -1,0 +1,1378 @@
+[
+  {
+    "letter": "A",
+    "title": "First Impressions & Public Website",
+    "objective": "Validate that the public website creates a powerful, immediate, and professional first impression that accurately represents Dr. Kavinda Gunasekara.",
+    "personaFocus": "Alex (First-Time Visitor) · Maria (Professional Evaluator) · James (Mobile Visitor)",
+    "items": [
+      {
+        "id": "UAT-A-001",
+        "title": "First Page Load Creates a Strong Impression",
+        "priority": "Business-Critical",
+        "persona": "All Visitors",
+        "userStory": "As a first-time visitor, I want the website to load quickly and look immediately impressive, so that I trust the person behind it is serious and professional.",
+        "preconditions": "Visiting the website for the first time (no cached data).",
+        "steps": [
+          "Open a fresh browser window (no cache, no extensions)",
+          "Navigate to the main website URL",
+          "Observe the initial load experience"
+        ],
+        "criteria": [
+          "The website fully loads within **5 seconds** on a standard broadband connection",
+          "The hero section is visually striking and communicates Dr. Kavinda's identity within 3 seconds",
+          "Dr. Kavinda's name, title (\"Project Management Specialist / FAO\"), and a professional photo or visual are visible immediately",
+          "No broken images, missing fonts, or layout shifts after load",
+          "The overall design feels premium, modern, and trustworthy"
+        ]
+      },
+      {
+        "id": "UAT-A-002",
+        "title": "Hero Section Communicates Value Clearly",
+        "priority": "Business-Critical",
+        "persona": "Alex, Maria",
+        "userStory": "As a professional evaluator, I want to immediately understand who this person is and what makes them exceptional, so that I can decide within 10 seconds whether to explore further.",
+        "preconditions": "",
+        "steps": [
+          "Land on the homepage",
+          "Read only what is visible without scrolling (above the fold)"
+        ],
+        "criteria": [
+          "The headline clearly states Dr. Kavinda's name and professional role",
+          "A subtitle or tagline communicates key credentials (e.g. FAO, 18+ years, international scope)",
+          "At least one clear Call-to-Action button is visible (e.g. \"View My Work\", \"Download CV\")",
+          "The visual design is consistent with the expected quality of a senior international expert"
+        ]
+      },
+      {
+        "id": "UAT-A-003",
+        "title": "Navigation Is Intuitive and Complete",
+        "priority": "High",
+        "persona": "All Visitors",
+        "userStory": "As a visitor, I want to navigate the site effortlessly and find any section I'm looking for, so that I don't get frustrated or leave.",
+        "preconditions": "",
+        "steps": [
+          "Examine the main navigation bar",
+          "Click each navigation item",
+          "Verify all sections are accessible"
+        ],
+        "criteria": [
+          "Navigation is clearly visible and readable on desktop",
+          "All major sections are represented: Projects, Research, Publications, Timeline, Network, About",
+          "Clicking each nav item scrolls to or navigates to the correct section",
+          "The active section is visually highlighted in the nav as the user scrolls",
+          "Navigation is accessible on a fresh page load without JavaScript errors"
+        ]
+      },
+      {
+        "id": "UAT-A-004",
+        "title": "The 3D Globe Creates a \"Wow\" Moment",
+        "priority": "High",
+        "persona": "Alex, James",
+        "userStory": "As a visitor, I want to see a visually engaging representation of Kavinda's global reach, so that I immediately understand the international scale of his work.",
+        "preconditions": "",
+        "steps": [
+          "Scroll to the globe / world map section",
+          "Interact with the globe (drag, scroll, click)",
+          "Observe country markers and data"
+        ],
+        "criteria": [
+          "The 3D globe renders visually and is interactive",
+          "The globe can be rotated by dragging with the mouse",
+          "Country markers or highlights are visible representing the 20+ countries",
+          "The globe does not freeze, crash, or cause significant performance degradation",
+          "The visual makes a powerful statement about the breadth of Dr. Kavinda's geographic reach"
+        ]
+      },
+      {
+        "id": "UAT-A-005",
+        "title": "Projects Section Showcases Work Professionally",
+        "priority": "Business-Critical",
+        "persona": "Alex, Maria",
+        "userStory": "As a researcher or evaluator, I want to browse Kavinda's projects and understand the depth and scale of his work, so that I can assess his expertise.",
+        "preconditions": "",
+        "steps": [
+          "Scroll to the Projects section",
+          "Browse the 10 project cards",
+          "Click on 2–3 different projects to view details"
+        ],
+        "criteria": [
+          "All 10 projects are displayed with a title, description, and visual",
+          "Each project card gives enough information to understand the project's nature and context",
+          "Clicking a project opens a detail page with full content (body text, images, metadata)",
+          "The project detail page feels complete and professional — not placeholder or thin",
+          "Navigation back to the homepage is intuitive after viewing a project detail"
+        ]
+      },
+      {
+        "id": "UAT-A-006",
+        "title": "Publications Section Establishes Academic Credibility",
+        "priority": "Business-Critical",
+        "persona": "Alex (researcher)",
+        "userStory": "As a fellow researcher, I want to see Dr. Kavinda's full publication list with proper academic citations and DOI links, so that I can access and cite his work.",
+        "preconditions": "",
+        "steps": [
+          "Navigate to the Publications section",
+          "Browse the 22 publications",
+          "Click a DOI link on any publication"
+        ],
+        "criteria": [
+          "All 22 publications are listed and readable",
+          "Each publication shows: title, authors, journal name, year, and citation count",
+          "DOI links open the correct external paper in a new browser tab",
+          "The total citation count (306+) and h-index (9) are prominently displayed",
+          "The presentation feels academically rigorous — not informal or incomplete"
+        ]
+      },
+      {
+        "id": "UAT-A-007",
+        "title": "Timeline Tells a Compelling Career Story",
+        "priority": "High",
+        "persona": "Maria (evaluator), Alex",
+        "userStory": "As a professional evaluator, I want to see a visual timeline of Dr. Kavinda's career milestones, so that I can quickly understand the trajectory and depth of his experience.",
+        "preconditions": "",
+        "steps": [
+          "Scroll to the Journey / Timeline section",
+          "Read through the 14 milestones",
+          "Click on a milestone to explore its related content"
+        ],
+        "criteria": [
+          "All 14 milestones are visible and chronologically ordered (Sep 2016 onwards)",
+          "Each milestone shows: date, title, subtitle, and contextual information",
+          "Visual badges and imagery make the timeline scannable and engaging",
+          "Clicking a milestone opens related content or a side panel with more detail",
+          "The timeline communicates a clear narrative of growth and international impact"
+        ]
+      },
+      {
+        "id": "UAT-A-008",
+        "title": "Research Areas Are Clearly Explained",
+        "priority": "High",
+        "persona": "Alex",
+        "userStory": "As a researcher, I want to understand Dr. Kavinda's specific research domains so that I can assess if our work overlaps and collaboration would be valuable.",
+        "preconditions": "",
+        "steps": [
+          "Navigate to the Research section",
+          "Read all 6 research area descriptions",
+          "Click on one to see its detail page"
+        ],
+        "criteria": [
+          "All 6 research areas are listed with titles and descriptions",
+          "Each research area is clearly explained in plain language",
+          "Related publications or projects are linked from each research area",
+          "The research area detail page feels informative and complete"
+        ]
+      },
+      {
+        "id": "UAT-A-009",
+        "title": "Network Visualization Shows Professional Connections",
+        "priority": "Medium",
+        "persona": "Alex",
+        "userStory": "As a visitor, I want to see how Dr. Kavinda's work, projects, and expertise are interconnected, so that I understand the depth of his professional network and knowledge graph.",
+        "preconditions": "",
+        "steps": [
+          "Navigate to the Network / Knowledge Graph section",
+          "Click on several nodes",
+          "Explore connections between nodes"
+        ],
+        "criteria": [
+          "The network diagram loads and is interactive (clickable nodes)",
+          "Clicking a node reveals its label, description, and related content",
+          "The visualization is not overwhelming — it's legible and navigable",
+          "Links between nodes are visually clear",
+          "The experience conveys sophistication and depth of expertise"
+        ]
+      },
+      {
+        "id": "UAT-A-010",
+        "title": "About Section Humanizes the Professional",
+        "priority": "High",
+        "persona": "Maria, Alex",
+        "userStory": "As a visitor, I want to read a personal and professional bio so that I understand who Dr. Kavinda is beyond his credentials.",
+        "preconditions": "",
+        "steps": [
+          "Navigate to the About section",
+          "Read the biography and stats",
+          "Check all information for accuracy"
+        ],
+        "criteria": [
+          "Bio text is compelling, accurate, and reads naturally",
+          "Key stats are prominently displayed: 18+ years experience, 20+ countries, 306+ citations, h-index 9",
+          "Professional photo or visual is present and loads correctly",
+          "The section feels personal and trustworthy — not robotic or generic"
+        ]
+      },
+      {
+        "id": "UAT-A-011",
+        "title": "CV Download Works Correctly",
+        "priority": "Business-Critical",
+        "persona": "Maria",
+        "userStory": "As an HR professional, I want to download Dr. Kavinda's CV so that I can review it offline and share it with colleagues.",
+        "preconditions": "",
+        "steps": [
+          "Find the \"Download CV\" button or link (on hero section or about section)",
+          "Click it"
+        ],
+        "criteria": [
+          "A clearly labeled CV download button or link exists on the page",
+          "Clicking it downloads `Kavinda_Gunasekara_CV.pdf` immediately or opens it in a new tab",
+          "The PDF opens correctly and contains complete, accurate, up-to-date information",
+          "The file name is professional (not \"document.pdf\" or \"file1.pdf\")"
+        ]
+      },
+      {
+        "id": "UAT-A-012",
+        "title": "Related Content Cross-Navigation Keeps Visitors Engaged",
+        "priority": "High",
+        "persona": "Alex",
+        "userStory": "As a researcher, I want to explore related content between projects, articles, and publications without losing my place, so that I can follow threads of interest naturally.",
+        "preconditions": "",
+        "steps": [
+          "Open a project detail page",
+          "Click a related article or publication in the \"Related Content\" section",
+          "Navigate back and try another related item"
+        ],
+        "criteria": [
+          "A \"Related Content\" section exists on project, article, blog, and publication detail pages",
+          "Clicking a related item opens a side panel or navigates to the item — without losing context",
+          "The back navigation works logically (user can return to where they started)",
+          "Related items are genuinely relevant (not random)",
+          "This feature encourages deeper exploration of the site"
+        ]
+      },
+      {
+        "id": "UAT-A-013",
+        "title": "Search Finds the Right Content Quickly",
+        "priority": "High",
+        "persona": "Alex, James",
+        "userStory": "As a visitor looking for specific content, I want to search the site and get relevant results quickly, so that I don't have to manually browse every section.",
+        "preconditions": "",
+        "steps": [
+          "Use the search feature on the public site",
+          "Search for \"FAO\" — observe results",
+          "Search for a publication title keyword — observe results",
+          "Search for something that doesn't exist — observe results"
+        ],
+        "criteria": [
+          "Search is easily discoverable on the public site",
+          "Results appear within 2 seconds of submitting a query",
+          "Search returns relevant content from projects, publications, articles, and blogs",
+          "Results clearly show the content type (Project / Publication / Article / Blog)",
+          "An empty state is shown gracefully for no results (not an error)"
+        ]
+      }
+    ]
+  },
+  {
+    "letter": "B",
+    "title": "Mobile Experience",
+    "objective": "Validate that the platform delivers an excellent experience on mobile and tablet devices.",
+    "personaFocus": "James (Mobile Visitor) · Maria (Tablet)",
+    "items": [
+      {
+        "id": "UAT-B-001",
+        "title": "Homepage Is Fully Functional on Mobile (iPhone)",
+        "priority": "Business-Critical",
+        "persona": "James (iPhone)",
+        "userStory": "As a mobile visitor, I want the website to look great and work perfectly on my phone, so that I don't have to pinch, zoom, or scroll horizontally to read anything.",
+        "preconditions": "",
+        "steps": [
+          "Open the website on an iPhone (or Chrome DevTools at 375px viewport)",
+          "Scroll through the full homepage",
+          "Try clicking navigation, project cards, and the floating AI button"
+        ],
+        "criteria": [
+          "Zero horizontal overflow (no content wider than the screen)",
+          "All text is readable without zooming",
+          "Navigation collapses to a hamburger menu or similar mobile-friendly pattern",
+          "All project, article, and publication cards stack vertically and are tappable",
+          "The floating AI button is visible and accessible on mobile",
+          "The 3D globe renders without crashing (or gracefully degrades on low-end devices)",
+          "CTA buttons have appropriate tap target sizes (minimum 44x44px)"
+        ]
+      },
+      {
+        "id": "UAT-B-002",
+        "title": "Project Detail Page Reads Correctly on Mobile",
+        "priority": "High",
+        "persona": "James",
+        "userStory": "As a mobile visitor, I want to read a full project description without any formatting issues.",
+        "preconditions": "",
+        "steps": [
+          "On mobile, tap any project card",
+          "Read the project detail page in full"
+        ],
+        "criteria": [
+          "Title, body text, images, and metadata all display correctly on mobile",
+          "Images do not overflow the screen",
+          "Related content section is accessible and usable on mobile",
+          "Back navigation is accessible"
+        ]
+      },
+      {
+        "id": "UAT-B-003",
+        "title": "Tablet Experience Is Polished (iPad)",
+        "priority": "High",
+        "persona": "Maria (iPad)",
+        "userStory": "As a professional visiting on a tablet, I want a layout that makes good use of the larger screen while still being touch-friendly.",
+        "preconditions": "",
+        "steps": [
+          "Open the website on an iPad (or 768px viewport)",
+          "Browse the full homepage"
+        ],
+        "criteria": [
+          "Cards use a 2-column or 3-column grid layout appropriate for the tablet screen width",
+          "Touch targets are large enough for comfortable tapping",
+          "No desktop-only hover states break the experience",
+          "Typography scales appropriately — not too large, not too small"
+        ]
+      },
+      {
+        "id": "UAT-B-004",
+        "title": "Sharing a Link From Mobile Works",
+        "priority": "Medium",
+        "persona": "James",
+        "userStory": "As a mobile visitor, I want to copy and share the URL of a specific project or publication so that I can send it to a colleague.",
+        "preconditions": "",
+        "steps": [
+          "Navigate to a project detail page on mobile",
+          "Copy the URL from the browser address bar",
+          "Paste it in a new tab or message"
+        ],
+        "criteria": [
+          "Each content page has a unique, shareable URL (e.g. /project/sustainable-agriculture)",
+          "Opening a shared URL goes directly to the correct content — not just the homepage",
+          "The URL is clean and human-readable (not a random hash)"
+        ]
+      }
+    ]
+  },
+  {
+    "letter": "C",
+    "title": "Public AI Assistant (Floating Widget)",
+    "objective": "Validate that the public-facing AI assistant is genuinely helpful, accurate, and enhances the visitor experience.",
+    "personaFocus": "Alex (researcher) · Maria (evaluator) · James (mobile)",
+    "items": [
+      {
+        "id": "UAT-C-001",
+        "title": "The Floating AI Widget Is Visible and Inviting",
+        "priority": "High",
+        "persona": "All Visitors",
+        "userStory": "As a visitor, I want to notice the AI assistant option without being distracted by it, so that I can choose to engage with it when I need help.",
+        "preconditions": "",
+        "steps": [
+          "Load the homepage",
+          "Notice the floating AI button"
+        ],
+        "criteria": [
+          "A floating chat/AI button is visible on the homepage (typically bottom-right)",
+          "The button is visually distinct and recognizable as an AI chat trigger",
+          "The button does not obscure important page content",
+          "On mobile, the button is appropriately sized and positioned"
+        ]
+      },
+      {
+        "id": "UAT-C-002",
+        "title": "AI Answers \"Who Is Kavinda?\" Correctly",
+        "priority": "Business-Critical",
+        "persona": "Maria",
+        "userStory": "As a professional evaluator, I want to ask the AI a simple question about Kavinda and receive an accurate, professional summary, so that I can quickly understand his profile.",
+        "preconditions": "",
+        "steps": [
+          "Open the floating AI widget",
+          "Type: \"Who is Dr. Kavinda Gunasekara?\"",
+          "Read the response"
+        ],
+        "criteria": [
+          "The AI responds within 10 seconds",
+          "The response accurately describes Dr. Kavinda's role (FAO Project Management Specialist)",
+          "Key credentials are mentioned: years of experience, countries, academic metrics",
+          "The response is professional in tone — not robotic or generic",
+          "No incorrect information is presented (no hallucinated details)"
+        ]
+      },
+      {
+        "id": "UAT-C-003",
+        "title": "AI Can Discuss Specific Publications",
+        "priority": "High",
+        "persona": "Alex (researcher)",
+        "userStory": "As a researcher, I want to ask the AI about specific publications so that I can quickly assess their relevance without reading everything manually.",
+        "preconditions": "",
+        "steps": [
+          "Open the floating AI widget",
+          "Type: \"What publications does Kavinda have on food security?\"",
+          "Read the response",
+          "Follow up: \"Can you tell me more about the most cited one?\""
+        ],
+        "criteria": [
+          "The AI references actual publications from the site (not invented ones)",
+          "The response includes titles and relevant context",
+          "The follow-up question is understood in context of the first question (multi-turn conversation works)",
+          "The AI suggests visiting the publications section for the full list"
+        ]
+      },
+      {
+        "id": "UAT-C-004",
+        "title": "AI Handles Questions About Projects and Countries",
+        "priority": "High",
+        "persona": "Alex",
+        "userStory": "As a visitor, I want to ask specific questions about Kavinda's projects and get useful answers.",
+        "preconditions": "",
+        "steps": [
+          "Ask: \"What countries has Kavinda worked in?\"",
+          "Ask: \"Tell me about his work in Sri Lanka\"",
+          "Ask: \"What is his most recent project?\""
+        ],
+        "criteria": [
+          "All three questions receive relevant, data-driven responses",
+          "The country information is sourced from the actual 20 countries in the database",
+          "Responses are conversational and helpful — not just raw data dumps",
+          "No wrong country is cited as one Kavinda has worked in"
+        ]
+      },
+      {
+        "id": "UAT-C-005",
+        "title": "Voice Input Works for Hands-Free Use",
+        "priority": "Medium",
+        "persona": "James (mobile)",
+        "userStory": "As a mobile visitor, I want to speak my question instead of typing it, so that I can interact with the AI while on the go.",
+        "preconditions": "",
+        "steps": [
+          "Open the AI widget on mobile",
+          "Tap the microphone button",
+          "Speak a question: \"What research has Kavinda done on sustainable agriculture?\"",
+          "Observe transcription and response"
+        ],
+        "criteria": [
+          "A microphone button is visible in the chat interface",
+          "Tapping the microphone starts recording (visual indicator shown)",
+          "The spoken question is transcribed and appears in the input field",
+          "The transcription is accurate enough to be understood by the AI",
+          "The AI responds to the transcribed question correctly"
+        ]
+      },
+      {
+        "id": "UAT-C-006",
+        "title": "AI Gracefully Handles Out-of-Scope Questions",
+        "priority": "Medium",
+        "persona": "All Visitors",
+        "userStory": "As a visitor, I want the AI to handle unexpected or off-topic questions gracefully, so that I don't encounter a confusing error.",
+        "preconditions": "",
+        "steps": [
+          "Ask: \"What's the weather like in Colombo today?\"",
+          "Ask: \"Help me write a poem\"",
+          "Ask: \"What's the stock price of Apple?\""
+        ],
+        "criteria": [
+          "The AI politely acknowledges it cannot help with off-topic requests",
+          "The AI redirects the conversation to what it can help with (Kavinda's work)",
+          "No error messages or crashes occur",
+          "The response remains professional and on-brand"
+        ]
+      }
+    ]
+  },
+  {
+    "letter": "D",
+    "title": "Admin Dashboard & Content Management",
+    "objective": "Validate that Kavinda can efficiently log in, manage all content types, and publish changes without requiring technical support.",
+    "personaFocus": "Dr. Kavinda Gunasekara (Content Administrator)",
+    "items": [
+      {
+        "id": "UAT-D-001",
+        "title": "Login Is Secure and Simple",
+        "priority": "Business-Critical",
+        "persona": "Kavinda (Admin)",
+        "userStory": "As the site owner, I want to log in quickly and securely, so that I can access my admin dashboard without frustration.",
+        "preconditions": "",
+        "steps": [
+          "Navigate to the admin login page",
+          "Enter admin credentials",
+          "Access the dashboard"
+        ],
+        "criteria": [
+          "The login page is clearly branded and easy to find",
+          "Login succeeds with correct credentials within 2 seconds",
+          "An incorrect password shows a clear error without revealing which field is wrong",
+          "After login, the admin dashboard is shown immediately",
+          "The session persists for at least 7 days without requiring re-login"
+        ]
+      },
+      {
+        "id": "UAT-D-002",
+        "title": "Admin Dashboard Gives Immediate Overview",
+        "priority": "High",
+        "persona": "Kavinda",
+        "userStory": "As the site owner, I want to see a dashboard summary when I log in, so that I know the current state of my content at a glance.",
+        "preconditions": "",
+        "steps": [
+          "Log in to the admin panel",
+          "View the dashboard home tab"
+        ],
+        "criteria": [
+          "Content counts are clearly displayed (projects, articles, blogs, publications, etc.)",
+          "The dashboard is visually clean and easy to scan",
+          "Navigation to all content sections is one click away",
+          "Any unread notifications or alerts are visible prominently"
+        ]
+      },
+      {
+        "id": "UAT-D-003",
+        "title": "Creating a New Project Is Straightforward",
+        "priority": "Business-Critical",
+        "persona": "Kavinda",
+        "userStory": "As the site owner, I want to create a new project entry without technical knowledge, so that I can publish my work independently.",
+        "preconditions": "",
+        "steps": [
+          "Navigate to the Projects section in admin",
+          "Click \"Create New Project\"",
+          "Fill in: title, body text (with rich formatting), status, cover image",
+          "Save and then view the public site"
+        ],
+        "criteria": [
+          "The \"Create\" button is clearly visible and labeled",
+          "The creation form includes all necessary fields: title, body, excerpt, status, cover image, tags",
+          "The rich text editor (body) allows formatting: bold, headings, lists, links, images",
+          "The saved project appears in the admin list immediately",
+          "Publishing the project makes it appear on the public site within 30 seconds",
+          "The public page looks professional and complete"
+        ]
+      },
+      {
+        "id": "UAT-D-004",
+        "title": "Editing Existing Content Is Quick and Error-Free",
+        "priority": "Business-Critical",
+        "persona": "Kavinda",
+        "userStory": "As the site owner, I want to edit any piece of content and have the change reflected on the public site immediately, so that I can keep my portfolio up-to-date.",
+        "preconditions": "",
+        "steps": [
+          "Find an existing project (e.g. Project 1)",
+          "Click Edit",
+          "Change the title",
+          "Save",
+          "View the public site"
+        ],
+        "criteria": [
+          "Edit buttons are clearly visible on each content item",
+          "The edit form pre-populates with the existing content — no starting from scratch",
+          "Saving is a single click",
+          "The change is reflected on the public site within 30 seconds",
+          "No data is lost during the edit (other fields remain unchanged)"
+        ]
+      },
+      {
+        "id": "UAT-D-005",
+        "title": "Draft vs Published Status Controls Visibility",
+        "priority": "High",
+        "persona": "Kavinda",
+        "userStory": "As the site owner, I want to save content as a draft and only publish it when I'm ready, so that unfinished work never appears on the public site.",
+        "preconditions": "",
+        "steps": [
+          "Create a new article with status \"Draft\"",
+          "Check the public site — verify the article is not visible",
+          "Change the status to \"Published\"",
+          "Check the public site — verify the article is now visible"
+        ],
+        "criteria": [
+          "Draft and Published status options are clearly labeled",
+          "Draft content is invisible on the public site",
+          "Published content is visible on the public site",
+          "Switching between draft and published takes effect immediately",
+          "It's clear in the admin list which items are drafts vs. published"
+        ]
+      },
+      {
+        "id": "UAT-D-006",
+        "title": "Uploading a New Image Is Simple",
+        "priority": "High",
+        "persona": "Kavinda",
+        "userStory": "As the site owner, I want to upload images easily and use them across my content, so that my portfolio stays visually rich.",
+        "preconditions": "",
+        "steps": [
+          "Navigate to the Media section in admin",
+          "Upload a new JPEG image",
+          "Set alt text and a caption",
+          "Use the media library to insert the image into a project body"
+        ],
+        "criteria": [
+          "Uploading a file is drag-and-drop or a simple file browser click",
+          "The image appears in the media library within 5 seconds of upload",
+          "Alt text and caption can be set without confusion",
+          "The image can be selected from the media library when editing content",
+          "The image loads correctly on the public site"
+        ]
+      },
+      {
+        "id": "UAT-D-007",
+        "title": "Uploading and Cropping an Image Works Correctly",
+        "priority": "Medium",
+        "persona": "Kavinda",
+        "userStory": "As the site owner, I want to crop uploaded images to ensure they look perfect as cover images, so that my portfolio looks polished.",
+        "preconditions": "",
+        "steps": [
+          "Upload a new image to the media library",
+          "Open the crop tool",
+          "Define a crop area",
+          "Apply the crop"
+        ],
+        "criteria": [
+          "A crop tool is available on uploaded images",
+          "The crop area can be adjusted freely with visible handles",
+          "Applying the crop saves a new cropped version",
+          "The cropped version is the one used as the card thumbnail by default",
+          "The original image is preserved alongside the cropped version"
+        ]
+      },
+      {
+        "id": "UAT-D-008",
+        "title": "My Workflow Editor Allows Natural Writing",
+        "priority": "High",
+        "persona": "Kavinda",
+        "userStory": "As the site owner, I want a Notion-like writing experience for editing my content, so that writing and updating feels natural and not technical.",
+        "preconditions": "",
+        "steps": [
+          "Navigate to the \"My Workflow\" tab in admin",
+          "Browse the file tree (all content types listed)",
+          "Click on a project to open it",
+          "Edit the title",
+          "Use the rich text toolbar to add a bold heading and a bullet list",
+          "Wait 30 seconds without manually saving"
+        ],
+        "criteria": [
+          "The file tree clearly shows all content types and how many items exist",
+          "Clicking any item opens it in the editor immediately",
+          "The editor feels like a modern writing tool (Notion-style, not a form)",
+          "The toolbar includes: Bold, Italic, Headings, Lists, Links, Images, Code blocks",
+          "Auto-save triggers after 30 seconds (a visual indicator confirms it saved)",
+          "No data is lost during auto-save"
+        ]
+      },
+      {
+        "id": "UAT-D-009",
+        "title": "Timeline Milestone Can Be Added With Visual Positioning",
+        "priority": "Medium",
+        "persona": "Kavinda",
+        "userStory": "As the site owner, I want to add a new career milestone to the timeline and control how it appears visually, so that my career story is told accurately.",
+        "preconditions": "",
+        "steps": [
+          "Navigate to the Timeline section in admin",
+          "Create a new milestone (title, date, subtitle, description, image URL)",
+          "Set the visual positioning fields (axis, line height)",
+          "Add 2 tags and 1 related content item",
+          "Save and check the public timeline"
+        ],
+        "criteria": [
+          "The create milestone form is clear and all fields are labeled",
+          "Visual positioning fields can be set with numeric values",
+          "Tags can be added by typing",
+          "Related content can be searched and linked",
+          "The saved milestone appears on the public timeline in the correct position"
+        ]
+      },
+      {
+        "id": "UAT-D-010",
+        "title": "Site Settings Can Be Updated Without a Developer",
+        "priority": "High",
+        "persona": "Kavinda",
+        "userStory": "As the site owner, I want to update my bio, hero text, and site metadata without needing a developer, so that I maintain full control of my platform.",
+        "preconditions": "",
+        "steps": [
+          "Navigate to the Settings section in admin",
+          "Update the hero headline text",
+          "Update the About bio text",
+          "Save and check the public site"
+        ],
+        "criteria": [
+          "Settings are clearly organized into logical sections (Hero, About, Navigation, Footer, Meta, AI)",
+          "Updating a text setting is a simple field-edit-and-save flow",
+          "Changes appear on the public site within 30 seconds of saving",
+          "No technical knowledge is required to understand what each setting controls",
+          "Accidentally mis-typing in one field does not break other settings"
+        ]
+      },
+      {
+        "id": "UAT-D-011",
+        "title": "Related Content Linking Is Intuitive",
+        "priority": "High",
+        "persona": "Kavinda",
+        "userStory": "As the site owner, I want to link my projects, articles, and publications together so that visitors can explore my interconnected body of work.",
+        "preconditions": "",
+        "steps": [
+          "Open the edit form for any project",
+          "In the Related Content section, search for and add an article and a publication",
+          "Reorder the related items",
+          "Save and check the public project detail page"
+        ],
+        "criteria": [
+          "The related content picker has a search bar and type filter",
+          "Selecting items is a single click — no complex configuration needed",
+          "Items can be reordered by dragging",
+          "Items can be removed with a single click",
+          "The saved related content appears correctly on the public site"
+        ]
+      },
+      {
+        "id": "UAT-D-012",
+        "title": "Admin Password Can Be Changed Securely",
+        "priority": "Business-Critical",
+        "persona": "Kavinda",
+        "userStory": "As the site owner, I want to change my admin password securely so that I can maintain the security of my platform.",
+        "preconditions": "",
+        "steps": [
+          "Navigate to the password change section in admin settings",
+          "Enter current password, new password, and confirm new password",
+          "Submit"
+        ],
+        "criteria": [
+          "The password change form requires the current password (no unauthorized changes)",
+          "A success confirmation is shown when the change succeeds",
+          "The old password no longer works after the change",
+          "The new password works immediately for the next login",
+          "The process works within the admin interface — no developer needed"
+        ]
+      }
+    ]
+  },
+  {
+    "letter": "E",
+    "title": "Lara Super Agent: Intelligence & Automation",
+    "objective": "Validate that Lara is a genuinely intelligent, safe, and powerful AI assistant that can autonomously manage the platform with proper oversight.",
+    "personaFocus": "Dr. Kavinda Gunasekara (AI Power User)",
+    "items": [
+      {
+        "id": "UAT-E-001",
+        "title": "Lara Understands the Full Platform Context",
+        "priority": "Business-Critical",
+        "persona": "Kavinda (AI Power User)",
+        "userStory": "As the site owner, I want Lara to know everything about my platform — all my content, settings, and structure — so that I can ask it questions and delegate tasks without having to explain context every time.",
+        "preconditions": "",
+        "steps": [
+          "Open the Lara AI Assistant tab",
+          "Ask: \"Give me a summary of everything on my site right now\"",
+          "Ask: \"How many publications do I have and what's my total citation count?\""
+        ],
+        "criteria": [
+          "Lara responds with an accurate summary of the platform's content",
+          "The publication count (22) and citation count (306+) are correct",
+          "Lara's knowledge reflects the current state of the database — not outdated data",
+          "The response is intelligently formatted and easy to read",
+          "Response time is acceptable (under 30 seconds for a full site summary)"
+        ]
+      },
+      {
+        "id": "UAT-E-002",
+        "title": "Lara Can Update Content and Asks for Approval First",
+        "priority": "Business-Critical",
+        "persona": "Kavinda",
+        "userStory": "As the site owner, I want Lara to be able to update my content when I ask it to, but I want to review and approve every change before it goes live, so that I always stay in control.",
+        "preconditions": "",
+        "steps": [
+          "Ask Lara: \"Update the title of my first project to 'Sustainable Food Systems Initiative'\"",
+          "Observe the authorization request that appears",
+          "Review the details of the proposed change",
+          "Click Authorize"
+        ],
+        "criteria": [
+          "Lara does NOT make the change immediately — it presents it for approval first",
+          "The authorization card clearly shows: what will be changed, from what, to what",
+          "The approval button is clearly labeled and a single click",
+          "After approval, the project title is updated in the database",
+          "The change is visible on the public site within 30 seconds",
+          "A cancel option is available if the proposed change is not desired"
+        ]
+      },
+      {
+        "id": "UAT-E-003",
+        "title": "Lara Can Create New Content Entries",
+        "priority": "High",
+        "persona": "Kavinda",
+        "userStory": "As the site owner, I want to tell Lara to create a new blog post or project and have it draft the content for me, so that I can publish faster.",
+        "preconditions": "",
+        "steps": [
+          "Ask Lara: \"Create a new draft blog post about my experience presenting at the FAO Regional Conference\"",
+          "Review the authorization request for the new blog creation",
+          "Approve it"
+        ],
+        "criteria": [
+          "Lara proposes a complete blog post with title, body, and appropriate metadata",
+          "The content is relevant, professional, and written in a style consistent with Dr. Kavinda's voice",
+          "An authorization request is shown before the post is created",
+          "After approval, the draft appears in the admin blog list",
+          "The content can then be edited manually before publishing"
+        ]
+      },
+      {
+        "id": "UAT-E-004",
+        "title": "Authorize All Mode Allows Efficient Bulk Operations",
+        "priority": "High",
+        "persona": "Kavinda",
+        "userStory": "As the site owner, when I have a lot of updates to make, I want to tell Lara to \"just do everything\" and trust it to execute, so that I can get large updates done efficiently.",
+        "preconditions": "",
+        "steps": [
+          "Give Lara a multi-step task (e.g. \"Update the excerpt of all 5 articles to be more concise\")",
+          "Review the multiple authorization requests that appear",
+          "Click \"Authorize All\""
+        ],
+        "criteria": [
+          "Multiple authorization requests are presented together when a multi-step task is proposed",
+          "\"Authorize All\" is a clearly visible button",
+          "Clicking \"Authorize All\" executes all pending actions in sequence",
+          "Each action is logged in the audit trail",
+          "The system switches to \"auto mode\" after Authorize All for the rest of the session"
+        ]
+      },
+      {
+        "id": "UAT-E-005",
+        "title": "Lara Remembers Conversation Context",
+        "priority": "High",
+        "persona": "Kavinda",
+        "userStory": "As the site owner, I want Lara to remember what we've talked about in our conversation, so that I can have a natural multi-turn dialogue without repeating context.",
+        "preconditions": "",
+        "steps": [
+          "Ask Lara: \"Which of my projects has the least content?\"",
+          "Follow up: \"Add a paragraph to it about the key outcomes of the project\"",
+          "Follow up again: \"Now generate a cover image for it\""
+        ],
+        "criteria": [
+          "Each follow-up correctly builds on the previous message",
+          "Lara does not ask \"which project?\" after step 1 established it",
+          "All three requests are fulfilled in a coherent conversation thread",
+          "No context is lost during the conversation"
+        ]
+      },
+      {
+        "id": "UAT-E-006",
+        "title": "Background Tasks Run Without Blocking the Interface",
+        "priority": "High",
+        "persona": "Kavinda",
+        "userStory": "As the site owner, I want to ask Lara to do a large task and then navigate away, knowing that Lara will complete the task in the background and notify me when it's done.",
+        "preconditions": "",
+        "steps": [
+          "Ask Lara: \"Run a full site scan and give me a complete summary\"",
+          "Navigate to a different admin tab while it runs",
+          "Wait for the notification"
+        ],
+        "criteria": [
+          "Lara starts the task and shows a visual indicator that it is running",
+          "The admin interface remains fully usable while the task runs",
+          "A desktop notification appears when the task is complete (if browser notifications are permitted)",
+          "The task result is available in the chat when returning to the Lara tab",
+          "No timeout or error occurs for tasks that take longer than 30 seconds"
+        ]
+      },
+      {
+        "id": "UAT-E-007",
+        "title": "Lara Can Scan the Site and Report Changes",
+        "priority": "High",
+        "persona": "Kavinda",
+        "userStory": "As the site owner, I want Lara to periodically scan my site and tell me if anything has changed or gone missing, so that I catch errors before my visitors do.",
+        "preconditions": "",
+        "steps": [
+          "Navigate to the Lara Scan tab",
+          "Click \"Run Scan Now\"",
+          "View the scan report",
+          "Check the diff (changes since last scan)"
+        ],
+        "criteria": [
+          "The scan completes within 60 seconds",
+          "The report shows totals for all content types (projects, articles, publications, etc.)",
+          "If any content has changed since the last scan, the diff is clearly highlighted",
+          "The diff distinguishes between: Added, Changed, and Removed items",
+          "A notification is created in the notification inbox on scan completion"
+        ]
+      },
+      {
+        "id": "UAT-E-008",
+        "title": "Lara's Engine Configuration Is Accessible and Clear",
+        "priority": "Medium",
+        "persona": "Kavinda",
+        "userStory": "As an advanced user, I want to be able to see which AI engines Lara is using and configure them if needed, so that I understand what is powering my AI assistant.",
+        "preconditions": "",
+        "steps": [
+          "Check Lara's status or engine configuration screen",
+          "View the list of 10 engines",
+          "View the available models for one engine"
+        ],
+        "criteria": [
+          "A status or settings page for Lara's engines is accessible in the admin",
+          "All 10 engines are listed: Orchestrator, Reasoning, Code, Vision, Memory, Speech, Safety, Image, Perception, Omni",
+          "Each engine shows its current status (active/inactive) and current model",
+          "The model can be changed from a list of available options",
+          "A \"Validate\" button confirms whether the engine's API connection is working"
+        ]
+      }
+    ]
+  },
+  {
+    "letter": "F",
+    "title": "Image Generation & Media Intelligence",
+    "objective": "Validate that Lara can generate professional images, manage them intelligently, and apply them to content with minimal manual effort.",
+    "personaFocus": "Dr. Kavinda Gunasekara (AI Power User)",
+    "items": [
+      {
+        "id": "UAT-F-001",
+        "title": "Lara Generates a High-Quality Image From a Description",
+        "priority": "Business-Critical",
+        "persona": "Kavinda",
+        "userStory": "As the site owner, I want to tell Lara what kind of image I need and have it generate a professional image for me, so that I don't have to source stock photos.",
+        "preconditions": "",
+        "steps": [
+          "Ask Lara: \"Generate a professional image of a sustainable farming landscape in Southeast Asia at golden hour\"",
+          "Wait for the image to be generated",
+          "View the generated image in the chat"
+        ],
+        "criteria": [
+          "Lara confirms the image generation task has started",
+          "The image is generated within 60 seconds",
+          "The generated image appears in the chat as a visible image — not a broken link or raw code",
+          "The image quality is professional and matches the description provided",
+          "The image is persisted — refreshing the page does not lose the image"
+        ]
+      },
+      {
+        "id": "UAT-F-002",
+        "title": "Generated Image Can Be Immediately Applied as Content Cover",
+        "priority": "High",
+        "persona": "Kavinda",
+        "userStory": "As the site owner, I want to instantly use a generated image as the cover photo for one of my content pieces, so that I can update my portfolio visuals without leaving the chat.",
+        "preconditions": "",
+        "steps": [
+          "Generate an image (UAT-F-001)",
+          "Tell Lara: \"Use this image as the cover of my latest blog post\"",
+          "Approve the authorization",
+          "Check the blog post on the public site"
+        ],
+        "criteria": [
+          "Lara understands \"this image\" refers to the most recently generated image",
+          "An authorization request appears showing: action = update cover image, target = latest blog",
+          "After approval, the blog's cover image is updated in the database",
+          "The new cover image appears on the public blog card within 30 seconds"
+        ]
+      },
+      {
+        "id": "UAT-F-003",
+        "title": "Multiple Images Can Be Generated in One Session",
+        "priority": "Medium",
+        "persona": "Kavinda",
+        "userStory": "As the site owner, I want to generate several images in one session and have them all available for use, so that I can build a set of visuals for a new content batch.",
+        "preconditions": "",
+        "steps": [
+          "Ask for Image 1: \"Generate a professional headshot-style background for a project card\"",
+          "Ask for Image 2: \"Generate an abstract visualization of data networks\"",
+          "Ask for Image 3: \"Generate a photorealistic image of the FAO headquarters in Rome\"",
+          "View all 3 images in the chat"
+        ],
+        "criteria": [
+          "All 3 images are generated without errors",
+          "Each image is independently accessible via its own persistent URL",
+          "The images are visually distinct and match their respective prompts",
+          "The chat history clearly shows all 3 images without overlap or confusion"
+        ]
+      },
+      {
+        "id": "UAT-F-004",
+        "title": "Chat History Does Not Show Raw Base64 Image Data",
+        "priority": "High",
+        "persona": "Kavinda",
+        "userStory": "As the site owner, I want the chat interface to remain clean and readable even after generating images, so that the conversation is still useful for follow-up tasks.",
+        "preconditions": "",
+        "steps": [
+          "Generate 2 images in a Lara conversation",
+          "Scroll through the full conversation history",
+          "Inspect whether any raw image data (base64 strings) is visible"
+        ],
+        "criteria": [
+          "No raw base64 data (long strings of random characters) is visible in the chat",
+          "Images appear as rendered thumbnails or linked images — not text blobs",
+          "The conversation before and after image generation remains readable",
+          "Response time after image generation is not significantly slower (no context bloat)"
+        ]
+      }
+    ]
+  },
+  {
+    "letter": "G",
+    "title": "Gmail Intelligence Suite",
+    "objective": "Validate that the Gmail integration provides a powerful, AI-enhanced email management experience within the admin dashboard.",
+    "personaFocus": "Dr. Kavinda Gunasekara (Email Manager)",
+    "items": [
+      {
+        "id": "UAT-G-001",
+        "title": "Gmail Account Connects Successfully",
+        "priority": "Business-Critical",
+        "persona": "Kavinda",
+        "userStory": "As the site owner, I want to connect my Gmail account once and have it work reliably, so that I can manage my professional email from within my platform.",
+        "preconditions": "",
+        "steps": [
+          "Navigate to the Lara Email tab",
+          "Click \"Connect Gmail\"",
+          "Complete the Google OAuth authorization flow",
+          "Return to the email tab"
+        ],
+        "criteria": [
+          "The connect button is clearly visible and labeled",
+          "The Google authorization page appears correctly and the app's name/logo is shown",
+          "After authorizing, the user is redirected back to the email tab automatically",
+          "The connected Gmail address is displayed on the email tab",
+          "The inbox begins loading messages within 10 seconds"
+        ]
+      },
+      {
+        "id": "UAT-G-002",
+        "title": "The Three-Panel Inbox Layout Is Intuitive",
+        "priority": "High",
+        "persona": "Kavinda",
+        "userStory": "As a professional managing email within a web app, I want a familiar three-panel inbox experience so that I can read and manage emails efficiently.",
+        "preconditions": "",
+        "steps": [
+          "Open the Lara Email tab with Gmail connected",
+          "Browse the folder list (left panel)",
+          "Click different emails in the message list (middle panel)",
+          "Read email bodies in the reader pane (right panel)"
+        ],
+        "criteria": [
+          "Three panels are clearly visible: Folders | Message List | Reader Pane",
+          "Clicking an email in the list loads its full content in the reader pane within 2 seconds",
+          "HTML email bodies are rendered correctly and safely (no script execution)",
+          "The folder/label list shows standard folders (Inbox, Sent, Drafts, etc.)",
+          "Unread emails are visually distinguished from read emails"
+        ]
+      },
+      {
+        "id": "UAT-G-003",
+        "title": "Email Actions Work (Star, Archive, Trash, Mark Read)",
+        "priority": "High",
+        "persona": "Kavinda",
+        "userStory": "As an email user, I want to quickly perform standard email actions without leaving the inbox, so that I can keep my email organized.",
+        "preconditions": "",
+        "steps": [
+          "Star an email and verify it appears starred",
+          "Archive an email and verify it is removed from inbox",
+          "Trash an email and verify it is removed from inbox",
+          "Mark a read email as \"unread\""
+        ],
+        "criteria": [
+          "All four actions work correctly on first attempt",
+          "After each action, the inbox list updates immediately (without full page reload)",
+          "Actions are reflected in the connected Gmail account (visible if Gmail is opened in another tab)",
+          "Each action has a clear visual button or icon that is easily identifiable"
+        ]
+      },
+      {
+        "id": "UAT-G-004",
+        "title": "AI Helps Draft a New Email",
+        "priority": "Business-Critical",
+        "persona": "Kavinda",
+        "userStory": "As a busy professional, I want the AI to draft a professional email for me based on a brief description, so that I can write emails faster without sacrificing quality.",
+        "preconditions": "",
+        "steps": [
+          "Open the compose window",
+          "Use the \"AI Compose\" feature",
+          "Enter topic: \"Request to extend the project deadline for the FAO climate resilience initiative by 2 weeks due to stakeholder feedback delays\"",
+          "Click \"Draft\""
+        ],
+        "criteria": [
+          "The AI generates a complete, professional email draft within 15 seconds",
+          "The draft includes: appropriate subject line, professional greeting, clear body, and sign-off",
+          "The tone is formal and appropriate for UN/FAO professional communication",
+          "The draft appears in the compose field and is fully editable",
+          "The draft does NOT contain any false facts or hallucinated project details"
+        ]
+      },
+      {
+        "id": "UAT-G-005",
+        "title": "AI Polishes a Rough Draft",
+        "priority": "High",
+        "persona": "Kavinda",
+        "userStory": "As a professional who writes quickly, I want the AI to refine my rough notes into a polished email, so that everything I send sounds professional.",
+        "preconditions": "",
+        "steps": [
+          "Type a rough draft in the compose window: \"hi john, need the report by friday, im presenting next week and need the data. also can u remind the team about the meeting. thanks\"",
+          "Click \"Polish\""
+        ],
+        "criteria": [
+          "The AI produces a clearly improved version: proper greeting, professional tone, no abbreviations, complete sentences",
+          "The meaning of the original message is preserved — nothing is invented",
+          "The polished version appears in the compose field for review",
+          "The process completes within 15 seconds"
+        ]
+      },
+      {
+        "id": "UAT-G-006",
+        "title": "AI Generates 3 Reply Suggestions for an Incoming Email",
+        "priority": "High",
+        "persona": "Kavinda",
+        "userStory": "As a professional with a full inbox, I want the AI to suggest appropriate replies to incoming emails, so that I can respond quickly without spending time composing from scratch.",
+        "preconditions": "",
+        "steps": [
+          "Open any incoming email in the reader pane",
+          "Click \"Reply Suggestions\"",
+          "View the 3 suggested replies"
+        ],
+        "criteria": [
+          "3 distinct reply suggestions are generated within 15 seconds",
+          "Each suggestion is a different approach: e.g. confirming, requesting more info, declining",
+          "Suggestions are appropriate to the email's content — not generic filler text",
+          "Clicking a suggestion populates the compose field with that reply (editable)",
+          "Suggestions are professional and match the expected communication style"
+        ]
+      },
+      {
+        "id": "UAT-G-007",
+        "title": "AI Summarizes a Long Email",
+        "priority": "High",
+        "persona": "Kavinda",
+        "userStory": "As a busy professional, I want to get a quick AI summary of a long email so that I can understand the key points without reading every paragraph.",
+        "preconditions": "",
+        "steps": [
+          "Open a long email (5+ paragraphs) in the reader pane",
+          "Click \"Summarize\"",
+          "Read the summary"
+        ],
+        "criteria": [
+          "A summary is generated within 10 seconds",
+          "The summary is 3-5 bullet points or a short paragraph",
+          "All key action items and important details from the email are captured",
+          "No information is fabricated — summary only reflects what's in the email",
+          "The summary is shown near the email, not replacing the original"
+        ]
+      },
+      {
+        "id": "UAT-G-008",
+        "title": "Sending an Email Is Confirm-Guarded",
+        "priority": "Business-Critical",
+        "persona": "Kavinda",
+        "userStory": "As a professional, I want a confirmation step before sending any email, so that I never accidentally send an incomplete or wrong email.",
+        "preconditions": "",
+        "steps": [
+          "Compose an email (To, Subject, Body)",
+          "Click \"Send\"",
+          "Observe the confirmation dialog",
+          "Confirm the send"
+        ],
+        "criteria": [
+          "A confirmation dialog or guard appears before the email is sent",
+          "The dialog clearly asks \"Are you sure you want to send this email?\"",
+          "Clicking \"Cancel\" or \"Go Back\" returns to the compose window with the email intact",
+          "Clicking \"Confirm Send\" sends the email to the correct recipient",
+          "A success confirmation is shown after sending",
+          "The sent email appears in the Gmail Sent folder"
+        ]
+      },
+      {
+        "id": "UAT-G-009",
+        "title": "The Floating Composer Is Draggable and Stackable",
+        "priority": "Medium",
+        "persona": "Kavinda",
+        "userStory": "As a power user, I want to write emails while still seeing the inbox behind the compose window, so that I can reference other emails while composing.",
+        "preconditions": "",
+        "steps": [
+          "Open the compose window",
+          "Drag it by the title bar to a different position on the screen",
+          "Open a second compose window"
+        ],
+        "criteria": [
+          "The compose window can be dragged to any position on the screen",
+          "The inbox remains visible and interactive behind the dragged compose window",
+          "A second compose window can be opened simultaneously (stacked)",
+          "Both compose windows remain functional independently"
+        ]
+      }
+    ]
+  },
+  {
+    "letter": "H",
+    "title": "Cross-Browser, Performance & Security",
+    "objective": "Validate that the platform works reliably across browsers, loads quickly, and protects user data.",
+    "personaFocus": "All",
+    "items": [
+      {
+        "id": "UAT-H-001",
+        "title": "Site Loads Correctly in All Major Browsers",
+        "priority": "Business-Critical",
+        "persona": "All Visitors",
+        "userStory": "As a visitor using any browser, I want the site to look and work correctly, so that the experience is not dependent on which browser I happen to use.",
+        "preconditions": "",
+        "steps": [
+          "Open the public site in Google Chrome",
+          "Open the public site in Mozilla Firefox",
+          "Open the public site in Apple Safari",
+          "Open the public site in Microsoft Edge"
+        ],
+        "criteria": [
+          "The site loads without errors in all 4 browsers",
+          "The layout, fonts, and colors are consistent across all browsers",
+          "All interactive elements (globe, AI widget, network diagram) work in all browsers",
+          "No JavaScript errors appear in the browser console on any browser"
+        ]
+      },
+      {
+        "id": "UAT-H-002",
+        "title": "Page Load Time Is Acceptable",
+        "priority": "High",
+        "persona": "All Visitors",
+        "userStory": "As a visitor, I want the website to load quickly so that I am not kept waiting and do not leave out of frustration.",
+        "preconditions": "",
+        "steps": [
+          "Load the homepage on a standard broadband connection",
+          "Note the time to first meaningful content",
+          "Note the time to full interactive state"
+        ],
+        "criteria": [
+          "First meaningful content (text, hero section) appears within **3 seconds**",
+          "The page is fully interactive within **5 seconds**",
+          "The 3D globe, if present, loads without blocking the rest of the page",
+          "There is no visible \"flash\" of unstyled content"
+        ]
+      },
+      {
+        "id": "UAT-H-003",
+        "title": "Admin Login Is Protected From Unauthorized Access",
+        "priority": "Business-Critical",
+        "persona": "Security",
+        "userStory": "As the site owner, I want to be confident that only I can access the admin dashboard, so that my content and platform settings are safe.",
+        "preconditions": "",
+        "steps": [
+          "Try accessing `/admin` without being logged in",
+          "Try accessing a private API endpoint (`/api/admin/projects`) without a session",
+          "Try entering the wrong password 5+ times in a row"
+        ],
+        "criteria": [
+          "Accessing `/admin` without a session shows only the login form — no admin content",
+          "The private API returns a 401 error without any content for unauthenticated requests",
+          "After multiple failed login attempts, access is temporarily blocked (rate limiting)",
+          "No admin data or structure is revealed to unauthenticated users"
+        ]
+      },
+      {
+        "id": "UAT-H-004",
+        "title": "Sensitive Data Is Never Exposed Publicly",
+        "priority": "Business-Critical",
+        "persona": "Security",
+        "userStory": "As the site owner, I want to be certain that no sensitive data (API keys, passwords, OAuth tokens) is ever exposed on the public website or in public API responses.",
+        "preconditions": "",
+        "steps": [
+          "View the source code of the public homepage",
+          "Call the public API (`/api/site-data`, `/api/projects`) and inspect the response",
+          "Open browser DevTools and check the Network tab for any leaks in public responses"
+        ],
+        "criteria": [
+          "No API keys, passwords, or secrets are visible in the page source",
+          "Public API responses contain only public content — no hashed passwords, OAuth tokens, or internal metadata",
+          "No admin URLs or structures are revealed in the public page source",
+          "The admin panel URL requires authentication — not publicly discoverable from page source"
+        ]
+      },
+      {
+        "id": "UAT-H-005",
+        "title": "The Platform Handles Errors Gracefully",
+        "priority": "High",
+        "persona": "All Visitors",
+        "userStory": "As a visitor, I want to see a helpful message if something goes wrong, rather than a confusing technical error page.",
+        "preconditions": "",
+        "steps": [
+          "Navigate to a non-existent page URL (e.g. `/project/this-does-not-exist`)",
+          "Disconnect internet and try to use the AI chat widget",
+          "Try submitting an empty form in admin"
+        ],
+        "criteria": [
+          "The 404 page is friendly and offers navigation back to the main site",
+          "The AI chat shows a user-friendly error message when offline",
+          "Empty form submissions show helpful validation messages (not crashes)",
+          "No stack traces, raw error objects, or server error pages are ever shown to users"
+        ]
+      }
+    ]
+  },
+  {
+    "letter": "I",
+    "title": "Overall Platform Quality & Client Acceptance",
+    "objective": "Final holistic review by the client to confirm the platform is launch-ready and accurately represents their professional identity.",
+    "personaFocus": "Dr. Kavinda Gunasekara (Site Owner & Final Approver)",
+    "items": [
+      {
+        "id": "UAT-I-001",
+        "title": "The Platform Accurately Represents Dr. Kavinda Gunasekara",
+        "priority": "Business-Critical",
+        "persona": "Kavinda",
+        "userStory": "As the platform owner, I want to confirm that every piece of content on the public site is accurate and represents me professionally, so that I am confident launching it to the world.",
+        "preconditions": "",
+        "steps": [
+          "Review the hero section — name, title, credentials",
+          "Review the About section — bio, stats",
+          "Browse all 10 projects — check for accuracy",
+          "Browse all 22 publications — check titles, authors, DOIs",
+          "Review the timeline milestones"
+        ],
+        "criteria": [
+          "My name is spelled correctly throughout the site",
+          "My professional title and organization (FAO) are correctly stated",
+          "All project titles and descriptions are accurate",
+          "All 22 publication titles, authors, journals, and years are correct",
+          "My citation count and h-index are accurate as of the launch date",
+          "The timeline milestones represent my actual career accurately",
+          "Nothing on the public site is embarrassing, inaccurate, or placeholder content"
+        ]
+      },
+      {
+        "id": "UAT-I-002",
+        "title": "I Am Proud to Share This Website With Colleagues and Clients",
+        "priority": "Business-Critical",
+        "persona": "Kavinda",
+        "userStory": "As the platform owner, I want to feel genuinely proud of this website, confident that it meets or exceeds the quality standards of my international professional peers.",
+        "preconditions": "",
+        "steps": [
+          "View the full homepage as a first-time visitor would",
+          "Navigate to 3 random project detail pages",
+          "Try the floating AI widget from a visitor's perspective",
+          "View the site on a mobile device"
+        ],
+        "criteria": [
+          "The overall design feels premium and distinctive — not like a generic template",
+          "I would confidently send this URL to a UN Director, a FAO colleague, or an academic collaborator",
+          "The AI assistant impressed me with at least one accurate, helpful response",
+          "The mobile experience did not embarrass me in any way",
+          "The platform makes me look like the world-class expert that I am"
+        ]
+      },
+      {
+        "id": "UAT-I-003",
+        "title": "I Can Manage the Platform Independently",
+        "priority": "Business-Critical",
+        "persona": "Kavinda",
+        "userStory": "As the platform owner, I want to be able to publish new content, update existing content, and manage my email — all without needing to call a developer.",
+        "preconditions": "",
+        "steps": [
+          "Publish a new draft blog post from the admin",
+          "Update the bio text in Settings",
+          "Generate a new image with Lara and apply it to a project",
+          "Reply to an email using an AI-generated draft"
+        ],
+        "criteria": [
+          "All four tasks were completed without needing any developer assistance",
+          "I did not need to write any code, access a database, or use a terminal",
+          "Each task took less than 5 minutes from start to finish",
+          "I feel confident that I could train another person to do these tasks from my team"
+        ]
+      },
+      {
+        "id": "UAT-I-004",
+        "title": "The AI Super Agent Feels Like a Genuine Business Asset",
+        "priority": "High",
+        "persona": "Kavinda",
+        "userStory": "As the platform owner, I want the Lara AI Super Agent to feel like a genuine business tool that saves me time — not a novelty feature.",
+        "preconditions": "",
+        "steps": [
+          "Delegate a real task to Lara (e.g. \"Write a draft update for my project on climate-resilient agriculture and add it to the existing content\")",
+          "Have Lara generate an image and apply it to that same project",
+          "Ask Lara to summarize what it did"
+        ],
+        "criteria": [
+          "The entire workflow (write → generate image → apply) completed without me writing a single line of text",
+          "The output quality was professional enough to use with minor editing",
+          "Lara's summary was accurate — it correctly described what it had done",
+          "I felt that Lara saved me at least 30 minutes of work"
+        ]
+      }
+    ]
+  }
+]

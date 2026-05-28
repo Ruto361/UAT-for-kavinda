@@ -1,0 +1,23 @@
+# Kavinda UAT — Netlify Configuration
+
+[build]
+  publish = "public"
+  functions = "netlify/functions"
+
+[functions]
+  node_bundler = "esbuild"
+  # Bundle the UAT data JSON with the function that needs it
+  included_files = ["netlify/functions/uat-data.json"]
+
+# Function-level routing is declared in each function's `export const config = { path: ... }`
+# so /api/* requests resolve to the right function automatically.
+
+[[headers]]
+  for = "/static/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"

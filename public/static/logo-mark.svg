@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 64" fill="none">
+  <defs>
+    <linearGradient id="lm-grad" x1="0" y1="0" x2="200" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="0.5" stop-color="#7c3aed"/>
+      <stop offset="1" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(4,4)">
+    <rect width="56" height="56" rx="14" fill="rgba(124,58,237,0.12)" stroke="url(#lm-grad)" stroke-width="1.5"/>
+    <path d="M16 14 L16 42 M16 28 L30 14 M16 28 L30 42" stroke="url(#lm-grad)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="40" cy="20" r="2.5" fill="#a78bfa"/>
+    <circle cx="40" cy="28" r="2.5" fill="#7c3aed"/>
+    <circle cx="40" cy="36" r="2.5" fill="#06b6d4"/>
+  </g>
+  <text x="74" y="32" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="20" fill="#f1f5f9" letter-spacing="-0.5">KAVINDA</text>
+  <text x="74" y="48" font-family="'JetBrains Mono', monospace" font-weight="500" font-size="9" fill="#94a3b8" letter-spacing="3">UAT · ACCEPTANCE</text>
+</svg>
